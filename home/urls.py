@@ -7,6 +7,8 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('codeeditor/',views.editor,name='editor'),
     re_path(r'^home/run$',views.runcode),
+    path('home/submit ',views.OnCLICKSUBMIT,name='Submit for review'),
+
 
 ]
 admin.site.site_header  =  "QQGC ADMIN"

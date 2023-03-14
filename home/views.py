@@ -4,6 +4,8 @@ import sys
 
 def home(request):
     return render(request,'base.html')
+def OnCLICKSUBMIT(request):
+    return render(request,'codereview.html')
 def editor(request):
     return render(request,'code.html')
 def runcode(request):
@@ -30,5 +32,7 @@ def runcode(request):
         print(output)
     res = render(request,'code.html',{"code":code_part,"input":y,"output":output})
     return res
+def input(request):
+    pass
 
 # Create your views here.
