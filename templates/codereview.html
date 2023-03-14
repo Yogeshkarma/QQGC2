@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Review| {% endblock %}
+{% block body %}
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Question</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Question here">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">CODe</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+  </div>
+    <div class="form-group row">
+        <div class="col-sm-7 ml-3">
+            <button type="button" class="btn btn-outline-primary">Submit For Review</button>
+        </div>
+    </div>
+    </form>
+{% endblock %}
